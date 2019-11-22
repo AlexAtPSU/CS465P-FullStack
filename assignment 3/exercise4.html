@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script type="text/javascript">	
+	</script>
+  <meta charset="UTF-8">
+	<style type="text/css">
+		.container {
+      display: grid;
+      grid-gap: 5px;
+      justify-content: center;
+      grid-template-columns: 200px 500px;
+      grid-template-rows: 50px 50px 50px 50px;
+    }
+    .container > div {
+      color: white;
+      background-color: #424242;
+      border-radius: 6px;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin: 2px;
+    }
+    #seven{
+      grid-column: span 2;
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+    <div id="seven">Seven</div>
+  </div>
+</body>
+</html>

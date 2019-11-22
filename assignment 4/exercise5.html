@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+		function randcol() {
+      		var values = "0123456789ABCDEF"; 
+    		var hex = '#';
+    		for(var i = 0; i != 6; i++){
+				hex += values[(Math.floor(Math.random() * 16))]; 
+			}
+			$("body").css("background-color", hex);
+		}
+</script>
+</head>
+<body>
+	<center>
+		<input type="button" name="button" value="Color Changer" id="button" onclick="randcol()" style="width: 20%;height: 20%;font-size: 300%;">
+	</center>
+
+</body>
+</html>

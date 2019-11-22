@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        function reverser(){
+            var rev = $("#textbox").val();
+            rev = rev.split("").reverse().join("");
+            $("body").append("<br>"+rev);
+            console.log(rev);
+        }
+      </script>
+    </head>
+  <body>
+    <input type="text" name="text" id="textbox">
+    <input type="button" name="button" onclick="reverser()" value="reverse text">
+    Also prints in console.
+  </body>
+</html>

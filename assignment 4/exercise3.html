@@ -1,0 +1,75 @@
+<html>
+<head>
+	<script type="text/javascript">
+		
+	</script>
+	<style type="text/css">
+		body {
+			background: white;
+		}
+
+		#form{
+			border-style: solid;
+			border-width: 2px;
+			width: 25%;
+			height:55%;
+			padding: 25px;
+			margin: auto;
+			margin-top: 10%;
+			background: white;
+			box-shadow: 5px 5px 10px grey;
+			position: relative;
+			font-size:1em;
+		}
+		.box{
+			text-align: left;
+			width: 100%;
+		}
+		#comment{
+			height: 5.2em;
+		}
+		h3{
+			text-align: center;
+		}
+	</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		function toconsole(){
+			console.log('name:'+ $("#name").val());
+            console.log('email:'+ $("#email").val());
+            console.log('message:'+ $("#comment").val());
+
+		}
+
+		function reset(){
+			$('.box').val('');
+		}
+	</script>
+
+
+</head>
+<body>
+	
+	<div id="form">
+		<br>
+		<h3>Contact Us</h3>
+		<br>
+		<form>
+			Name<br>
+			<input type="text" id="name" class="box"><br><br>
+			Email<br>
+			<input type="email" id="email" class="box"><br><br>
+			Comment<br>
+			<input type="text" id="comment" class="box" id="comment"><br><br>
+			<input type="button" name="submit" value="Submit" class="btn btn-primary" onclick="toconsole()">
+			<input type="reset" name="reset" value="Reset" class="btn btn-secondary" onclick="reset()">
+		</form>
+	</div>
+</body>
+</html>
